@@ -1,0 +1,42 @@
+\\ class & Object
+
+<?php 
+     class Book {
+          var $author;
+          var $title; 
+          var $pages;
+}
+ $book= new Book;
+ $book->author = "tolkien";
+ $book->title ="day of rings";
+ $book->pages ="200";
+ 
+  $book1= new Book;
+ $book1->author = "J B Patel";
+ $book1->title ="java";
+ $book1->pages ="100";
+ 
+ echo $book1->author;
+ ?>
+ 
+ \\ constructor
+ 
+<?php 
+ class Book {
+          var $author;
+          var $title; 
+          var $pages;
+   function __construct($aAuthor,$atitle,$apages)
+ 	{
+ 		$this->author = $aAuthor;
+ 	$this->title = $atitle;
+ 	$this->pages = $apages;
+ 	}
+}
+ $book= new Book("tolkien","day of rings",200);
+ echo $book->atitle="hungire";
+  $book1= new Book("het","J B Patel",100);
+  echo $book1->title;
+?>
+
+\\Object Function
